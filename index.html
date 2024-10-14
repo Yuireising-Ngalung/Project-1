@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-1</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="myscript.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- DESKTOP MENU -->
+      <div class="desktop-menu container flex">
+        <a href="" class="logo">CARVILLA</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Featured Cars</a></li>
+          <li><a href="#">New Cars</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu container flex">
+        <ul class="sidemenu">
+          <li>
+            <a href="#" onclick="closeMenu()"
+              ><img class="icon" src="./images/close.png"
+            /></a>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Featured Cars</a></li>
+          <li><a href="#">New Cars</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <img onclick="openMenu()" src="./images/menu.png" class="icon" />
+        <a href="" class="logo">CARVILLA</a>
+      </div>
+    </header>
+
+    <!--  ==============Hero Section=================-->
+    <section class="hero-section flex">
+      <div class="overlay"></div>
+
+      <div class="container hero-section-container">
+        <h1>get your desired car in resonable price</h1>
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+          asperiores molestias numquam ad necessitatibus aut debitis sed.
+        </h2>
+        <button>Contact Us</button>
+      </div>
+    </section>
+
+    
+  </body>
+</html>

@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+button {
+  padding: 20px 40px;
+  border: none;
+  background-color: #4e4ffa;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0000f5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+header {
+  background-color: transparent;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+/* ============DESKTOP MENU=============== */
+.desktop-menu {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  color: white;
+}
+
+.desktop-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.desktop-menu ul li {
+  height: 80px;
+  margin: 15px;
+}
+
+.desktop-menu ul li a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  text-transform: uppercase;
+  padding: 0 10px;
+  color: white;
+}
+
+/* ===========MOBILE MENU============== */
+
+.icon {
+  height: 40px;
+}
+
+.mobile-menu {
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.mobile-menu ul {
+  position: fixed;
+  background-color: pink;
+  list-style: none;
+  width: 250px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  display: none;
+}
+
+.mobile-menu ul li {
+  width: 100%;
+  padding: 20px 10px;
+  margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+@media screen and (min-width: 993px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+/* ==============HERO SECTION============ */
+.hero-section {
+  background-image: url(./images/welcome-hero/welcome-banner.jpg);
+  height: 150vh;
+  object-fit: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  width: 100%;
+  height: 150vh;
+  position: absolute;
+  background-color: rgb(10, 0, 97);
+  opacity: 0.2;
+  z-index: 2;
+}
+
+.hero-section-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.hero-section-container h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section-container h2 {
+  font-size: 1.5rem;
+  width: 70%;
+  margin: auto;
+}
+
+.hero-section-container button {
+  margin-top: 2rem;
+}
