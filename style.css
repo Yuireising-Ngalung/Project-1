@@ -169,13 +169,14 @@ header {
 .form-wrapper {
   display: grid;
   grid-template-columns: 1fr 150px;
+  padding: 0 1rem;
 }
 
 .form-container {
   width: 100%;
   background-color: white;
   padding: 5rem 0;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   margin-top: -150px;
   z-index: 1;
 }
