@@ -149,8 +149,7 @@ header {
   flex-direction: column;
   text-align: center;
   color: white;
-  padding: 5rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .hero-section-container h1 {
