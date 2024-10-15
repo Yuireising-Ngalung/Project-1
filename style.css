@@ -1,6 +1,15 @@
 body {
   background-color: red;
 }
+
+:root {
+  --blue_color: #4e4ffa;
+
+  --gray_color_0: #444a57;
+  --gray_color_2: #818998;
+  --gray_color_1: #444a57;
+  --footer_background_color: #2a2d54;
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +22,6 @@ section {
 
 .container {
   max-width: 1200px;
-  background-color: yellow;
   margin: auto;
   padding: 20px;
 }
@@ -26,7 +34,28 @@ section {
   height: 40px;
 }
 
+.btn {
+  padding: 20px 40px;
+  background-color: var(--blue_color);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: var(--blue_color);
+  transition: 0.5s;
+}
+
 /* ===============DESKTOP MENU */
+
+header {
+  background-color: pink;
+}
 .desktop-menu {
   justify-content: space-between;
   align-items: center;
@@ -39,7 +68,6 @@ section {
 
 .desktop-menu ul li {
   height: 50px;
-  background-color: orange;
   margin-left: 20px;
 }
 
@@ -50,10 +78,8 @@ section {
   align-items: center;
   text-decoration: none;
   padding-inline: 10px;
-}
-
-.desktop-menu ul li a:hover {
-  background-color: green;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 /* =============MOBILE MENU============== */
@@ -112,4 +138,30 @@ section {
   .desktop-menu {
     display: none;
   }
+}
+
+/* =============HERO SECTION============ */
+.hero-section {
+  background: linear-gradient(45deg, white, purple);
+  height: 100vh;
+}
+
+.hero-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.hero-container h1 {
+  text-transform: uppercase;
 }
