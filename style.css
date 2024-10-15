@@ -31,7 +31,7 @@ a {
 }
 
 header {
-  background-color: maroon;
+  background-color: transparent;
   position: fixed;
   z-index: 5;
   width: 100%;
@@ -125,8 +125,9 @@ header {
 
 /* ==============HERO SECTION============ */
 .hero-section {
-  background-color: red;
+  background-image: url(./images/welcome-hero/banner-1.jpg);
   height: 100vh;
+  width: 100%;
   object-fit: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -148,6 +149,8 @@ header {
   flex-direction: column;
   text-align: center;
   color: white;
+  padding: 5rem;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .hero-section-container h1 {
@@ -170,6 +173,7 @@ header {
 /* ==========Form Section============ */
 .form-section {
   margin-top: -150px;
+  padding-inline: 10px;
 }
 .form-wrapper {
   display: grid;
@@ -230,6 +234,11 @@ header {
   }
 }
 
+/* =============Card Section============== */
+
+.card-section {
+  padding-inline: 10px;
+}
 .card-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
