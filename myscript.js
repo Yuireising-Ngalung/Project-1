@@ -1,9 +1,11 @@
-function openMenu() {
-  const showMenu = document.querySelector(".sidemenu");
-  showMenu.style.display = "block";
+function opensidemenu() {
+  const open = document.querySelector(".side-menu");
+
+  open.style.display = "block";
 }
 
-function closeMenu() {
-  const showMenu = document.querySelector(".sidemenu");
-  showMenu.style.display = "none";
+function closesidemenu() {
+  const close = document.querySelector(".side-menu");
+
+  close.style.display = "none";
 }

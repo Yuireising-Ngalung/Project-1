@@ -8,155 +8,99 @@
     <script src="myscript.js"></script>
   </head>
   <body>
+    <!-- ============HEADER SECTION================= -->
     <header>
-      <!-- DESKTOP MENU -->
-      <div class="desktop-menu container flex">
-        <a href="" class="logo">CARVILLA</a>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Featured Cars</a></li>
-          <li><a href="#">New Cars</a></li>
-          <li><a href="#">Brands</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+      <!-- ======Desktop Menu======= -->
+      <div class="container desktop-menu flex">
+        <div>
+          <h1>Carvilla</h1>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Featured Cars</a></li>
+            <li><a href="#">New Cars</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </div>
 
-      <!-- MOBILE MENU -->
-      <div class="mobile-menu container flex">
-        <ul class="sidemenu">
-          <li>
-            <a href="#" onclick="closeMenu()"
-              ><img class="icon" src="./images/close.png"
-            /></a>
-          </li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Featured Cars</a></li>
-          <li><a href="#">New Cars</a></li>
-          <li><a href="#">Brands</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <img onclick="openMenu()" src="./images/menu.png" class="icon" />
-        <a href="" class="logo">CARVILLA</a>
+      <!-- ======Mobile Menu======= -->
+      <div class="container mobile-menu flex">
+        <div>
+          <h1>Carvilla</h1>
+        </div>
+        <div>
+          <img src="./images/menu.png" onclick="opensidemenu()" class="icon" />
+        </div>
+        <div class="side-menu">
+          <ul>
+            <li>
+              <img
+                src="./images/close.png"
+                onclick="closesidemenu()"
+                class="icon"
+              />
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Featured Cars</a></li>
+            <li><a href="#">New Cars</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </header>
-
-    <!--  ==============Hero Section=================-->
-    <section class="hero-section flex">
-      <div class="overlay"></div>
-
-      <div class="container hero-section-container">
-        <h1>get your desired car in resonable price</h1>
-        <h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-          asperiores molestias numquam ad necessitatibus aut debitis sed.
-        </h2>
-        <button>Contact Us</button>
+    <!-- ==============HERO SECTION================= -->
+    <section>
+      <div class="container">
+        <h1>hello world</h1>
       </div>
     </section>
 
-    <!-- ==============Form Section================== -->
-
-    <section class="form-section flex">
-      <div class="container form-container">
-        <form action="" class="form-wrapper">
-          <div class="grid">
-            <div class="input-container">
-              <label for="year">Select Year</label>
-              <select name="" id="">
-                <option disabled>YEAR</option>
-                <option value="2024" selected>2024</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-              </select>
-            </div>
-            <div class="input-container">
-              <label for="year">Select Make</label>
-              <select name="" id="">
-                <option>Make</option>
-                <option value="Toyota">Toyota</option>
-                <option value="Holden">Holden</option>
-                <option value="Marcedes-Benz">Marcedes-Benz</option>
-              </select>
-            </div>
-            <div class="input-container">
-              <label for="year">Model</label>
-              <select name="" id="">
-                <option>Model</option>
-                <option value="Kia-Rio" selected>Kia-Rio</option>
-                <option value="Mitsubishi">Mitsubishi</option>
-                <option value="Ford">Ford</option>
-              </select>
-            </div>
-            <div class="input-container">
-              <label for="year">Body Style</label>
-              <select name="" id="">
-                <option disabled>Style</option>
-                <option value="Sedan" selected>Sedan</option>
-                <option value="Van">Van</option>
-                <option value="Roadster">Roadster</option>
-              </select>
-            </div>
-            <div class="input-container">
-              <label for="year">Car Condition</label>
-              <select name="" id="">
-                <option>Condition</option>
-                <option value="Something" selected>Something</option>
-                <option value="Something">Something</option>
-                <option value="Something">Something</option>
-              </select>
-            </div>
-            <div class="input-container">
-              <label for="year">Select Price</label>
-              <select name="" id="">
-                <option disabled>Price</option>
-                <option value="$0.00" selected>$0.00</option>
-                <option value="$0.00">$0.00</option>
-                <option value="$0.00">$0.00</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-button"><button>search</button></div>
-        </form>
+    <!-- ==============Form SECTION================= -->
+    <section id="home">
+      <div class="container">
+        <h1>hello world</h1>
       </div>
     </section>
-
-    <!-- ================Card Section================ -->
-    <section class="card-section">
-      <div class="container card-grid-container">
-        <div class="grid-card">
-          <img src="./images/car-1.png" alt="" class="icon" />
-          <h3>largest dealership of car</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-            facere obcaecati similique nam vitae placeat, eligendi maxime ea
-            fuga! Temporibus!
-          </p>
-          <span></span>
-        </div>
-
-        <div class="grid-card">
-          <img src="./images/car-2.png" alt="" class="icon" />
-          <h3>largest dealership of car</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-            facere obcaecati similique nam vitae placeat, eligendi maxime ea
-            fuga! Temporibus!
-          </p>
-          <span></span>
-        </div>
-
-        <div class="grid-card">
-          <img src="./images/car-3.png" alt="" class="icon" />
-          <h3>largest dealership of car</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-            facere obcaecati similique nam vitae placeat, eligendi maxime ea
-            fuga! Temporibus!
-          </p>
-          <span></span>
-        </div>
+    <!-- ==============SERVICE SECTION================= -->
+    <section id="service">
+      <div class="container">
+        <h1>hello world</h1>
+      </div>
+    </section>
+    <!-- ==============NEW CAR MODEL SECTION================= -->
+    <section id="newcar">
+      <div class="container">
+        <h1>hello world</h1>
+      </div>
+    </section>
+    <!-- =============FEATURE SECTION================= -->
+    <section id="feature">
+      <div class="container">
+        <h1>hello world</h1>
+      </div>
+    </section>
+    <!-- ==============CLIENT SECTION================= -->
+    <section>
+      <div class="container">
+        <h1>hello world</h1>
+      </div>
+    </section>
+    <!-- ==============brands SECTION================= -->
+    <section id="brands">
+      <div class="container">
+        <h1>hello world</h1>
+      </div>
+    </section>
+    <!-- ==============FOOTER SECTION================= -->
+    <section>
+      <div class="container">
+        <h1>hello world</h1>
       </div>
     </section>
   </body>
