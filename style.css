@@ -73,17 +73,20 @@ a {
 }
 
 a:hover {
-  color: var(--blue_color);
   transition: 0.5s;
 }
 
 /* ===============DESKTOP MENU=========== */
 
 header {
-  background-color: pink;
+  background-color: var(--gray_color_2);
   position: fixed;
   width: 100%;
   top: 0;
+}
+
+.logo {
+  color: white;
 }
 .desktop-menu {
   justify-content: space-between;
@@ -116,13 +119,19 @@ header {
   justify-content: space-between;
 }
 
+.hamburger {
+  background-color: white;
+  padding: 5px 5px 0 5px;
+  border-radius: 5px;
+}
+
 .mobile-menu img {
   cursor: pointer;
 }
 .side-menu {
   width: 250px;
   height: 100vh;
-  background-color: white;
+  background-color: var(--gray_color_2);
   position: fixed;
   top: 0;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -141,7 +150,6 @@ header {
 }
 
 .side-menu ul li {
-  background-color: orange;
   width: 100%;
   padding: 20px;
   margin: 10px;
@@ -151,10 +159,7 @@ header {
   text-decoration: none;
   height: 100%;
   width: 100%;
-}
-
-.side-menu ul li:hover {
-  background-color: green;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 991px) {
@@ -482,6 +487,38 @@ select {
   }
 }
 
+.company-container p {
+  margin-bottom: 10px;
+}
+
+.link {
+  color: white;
+}
+
+.link:hover {
+  color: white;
+}
+
+.top-brands {
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a:hover {
+  margin-left: 10px;
+  transition: 0.9s;
+}
+
+.newsletter form input {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
 .copyrights {
   justify-content: space-between;
   margin-top: 20px;
@@ -494,6 +531,12 @@ select {
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+}
+
+.social-media a {
+  background-color: white;
+  padding: 10px 10px 5px 10px;
+  border-radius: 5px;
 }
 
 .social-media img {
