@@ -1,5 +1,4 @@
 body {
-  background-color: red;
 }
 
 :root {
@@ -21,9 +20,26 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
 section {
   padding: 50px 10px;
 }
@@ -280,6 +296,9 @@ header {
 }
 
 /* ============CAR MODEL============ */
+.car-model-section {
+  background-color: #f8f9fb;
+}
 .car-model-wrapper {
   flex-direction: column;
   justify-content: center;
@@ -303,11 +322,15 @@ header {
   gap: 20px;
 }
 
-.car-model-right {
-  width: 400px;
+.car-model-left {
+  flex: 1.5;
 }
 
-.car-model-right img {
+.car-model-description {
+  flex: 1;
+}
+
+.car-model-left img {
   width: 100%;
 }
 
@@ -323,5 +346,13 @@ header {
   .car-model-container {
     flex-wrap: wrap;
     width: 80%;
+  }
+
+  .car-model-description {
+    flex: auto;
+  }
+
+  .car-model-left {
+    flex: auto;
   }
 }
