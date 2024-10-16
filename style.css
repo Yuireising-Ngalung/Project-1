@@ -292,6 +292,9 @@ select {
   color: white;
   transition: 0.5s;
 
+  p {
+    color: white !important;
+  }
   span {
     background-color: white;
   }
@@ -420,4 +423,16 @@ select {
     display: grid;
     grid-template-columns: 1fr;
   }
+}
+
+/* ==============Brand logo section============ */
+.brand-logo-wrapper {
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  overflow-x: scroll;
+}
+
+.brand-logo-wrapper::-webkit-scrollbar {
+  display: none;
 }
