@@ -16,6 +16,14 @@ body {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
 section {
   padding-inline: 10px;
 }
@@ -55,6 +63,9 @@ a:hover {
 
 header {
   background-color: pink;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 .desktop-menu {
   justify-content: space-between;
@@ -160,6 +171,7 @@ header {
   gap: 50px;
   width: 50%;
   text-align: center;
+  color: white;
 }
 
 @media screen and (max-width: 990px) {
@@ -225,6 +237,8 @@ header {
 /* ===========Service Section============== */
 .service-container {
   gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -235,6 +249,7 @@ header {
   gap: 30px;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card span {
@@ -254,7 +269,58 @@ header {
   }
 }
 @media screen and (max-width: 990px) {
-  .card {
+  .service-container {
     flex-wrap: wrap;
+
+    .card {
+      width: 300px;
+    }
+  }
+}
+
+/* ============CAR MODEL============ */
+.car-model-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.section-header span {
+  width: 50px;
+  height: 10px;
+  background-color: var(--blue_color);
+}
+.car-model-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.car-model-right {
+  width: 400px;
+}
+
+.car-model-right img {
+  width: 100%;
+}
+
+.car-model-container .car-model-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+@media screen and (max-width: 990px) {
+  .car-model-container {
+    flex-wrap: wrap;
+    width: 80%;
   }
 }
