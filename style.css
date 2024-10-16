@@ -79,7 +79,7 @@ a:hover {
 /* ===============DESKTOP MENU=========== */
 
 header {
-  background-color: var(--gray_color_2);
+  background-color: var(--footer_background_color);
   position: fixed;
   width: 100%;
   top: 0;
